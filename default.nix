@@ -15,7 +15,7 @@ pkgs.mkShell {
   shellHook = ''
     echo "🐍 Python: $(python --version)"
     echo "📓 Jupyter: $(jupyter --version | head -1)"
-    echo ""
-    echo "run: jupyter notebook demo.ipynb"
+
+    jupyter notebook demo.ipynb
   '';
 }
