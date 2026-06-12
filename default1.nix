@@ -8,9 +8,8 @@ pkgs.dockerTools.buildLayeredImage {
   name = "cli-toolbox-nix";
   tag = "latest2";
 
-  contents = with pkgs; [
+  contents = with pkgs.pkgsMusl; [
     htop
-    bash
     busybox
   ];
 

@@ -1,4 +1,4 @@
 FROM alpine:latest
-RUN apk add --no-cache bash busybox htop
+RUN apk add --no-cache busybox htop
 
 CMD [ "sh" ]
